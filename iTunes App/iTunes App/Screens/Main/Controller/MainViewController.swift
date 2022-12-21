@@ -7,12 +7,14 @@
 
 import UIKit
 
-class MainViewController: UIViewController {
+final  class MainViewController: UIViewController {
 
+    private let mainView = MainView() // Instance
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-        view.backgroundColor = .systemTeal
+        view = mainView // mainView is now our view.
+        mainView.setCollectionViewDelegate(self, andDataSource: self)
         
         iTunesAPI.shared.fetchPodcasts() { response, error in
             if let error = error {
@@ -22,6 +24,27 @@ class MainViewController: UIViewController {
             guard let response = response else { return }
             print(response)
         }
+    }
+}
+
+// MARK: - UICollectionViewDelegate
+extension MainViewController: UICollectionViewDelegate {
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("\(indexPath.row)")
+    }
+}
+// MARK: - UICollectionViewDataSource
+extension MainViewController: UICollectionViewDataSource {
+    
+    
+    func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
+        10 
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath)
+        cell.backgroundColor = .red
+        return cell
     }
 }
 
