@@ -48,13 +48,12 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         // to restore the scene back to its current state.
     }
     
-    private func setupWindow(with windowScene: UIWindowScene) {
+    private func setupWindow(with windowScene: UIWindowScene) { // Necessary settings to use programmatic UI
         let window = UIWindow(windowScene: windowScene)
         let viewController = MainViewController()
         let navigationController = UINavigationController(rootViewController: viewController)
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
-        window.backgroundColor = .systemTeal
         self.window = window
     }
 }
