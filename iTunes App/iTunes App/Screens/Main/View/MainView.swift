@@ -22,7 +22,7 @@ final class MainView: UIView {
     init() {
         super.init(frame: .zero)
         setupCollectionViewLayout()
-        collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(PodcastCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
     }
     
     required init?(coder: NSCoder) {
@@ -52,4 +52,11 @@ final class MainView: UIView {
         collectionView.delegate = delegate
         collectionView.dataSource = dataSource
     }
+     
+    func refresh() {
+        DispatchQueue.main.async { // All the UI Operations have to be on main thread
+            self.collectionView.reloadData()
+        }
+    }
+    
 }

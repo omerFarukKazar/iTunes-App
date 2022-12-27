@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		9D2310762951B1D300D559EB /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2310752951B1D300D559EB /* iTunesAPI.swift */; };
+		9D4F90F22955E80D00846B49 /* PodcastCollectionViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F90F12955E80D00846B49 /* PodcastCollectionViewCustomCell.swift */; };
 		9DB2131D2951E1A700FD4BF4 /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */; };
 		9DB213202952188C00FD4BF4 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131F2952188C00FD4BF4 /* Podcast.swift */; };
 		9DF3843A295310BF0078DE3B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF38439295310BF0078DE3B /* MainView.swift */; };
@@ -20,6 +21,7 @@
 
 /* Begin PBXFileReference section */
 		9D2310752951B1D300D559EB /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		9D4F90F12955E80D00846B49 /* PodcastCollectionViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCollectionViewCustomCell.swift; sourceTree = "<group>"; };
 		9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
 		9DB2131F2952188C00FD4BF4 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		9DF38439295310BF0078DE3B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
@@ -135,6 +137,7 @@
 			isa = PBXGroup;
 			children = (
 				9DF38439295310BF0078DE3B /* MainView.swift */,
+				9D4F90F12955E80D00846B49 /* PodcastCollectionViewCustomCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -249,6 +252,7 @@
 				9DF4DA33294C801C0026C42E /* MainViewController.swift in Sources */,
 				9DF4DA2F294C801C0026C42E /* AppDelegate.swift in Sources */,
 				9DF4DA31294C801C0026C42E /* SceneDelegate.swift in Sources */,
+				9D4F90F22955E80D00846B49 /* PodcastCollectionViewCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
