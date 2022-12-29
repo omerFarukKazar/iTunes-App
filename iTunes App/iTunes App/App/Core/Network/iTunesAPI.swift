@@ -35,21 +35,4 @@ final class iTunesAPI {
         }
         dataTask.resume()
     }
-    
-    /// Sends a request with the url of the image which wanted to be downloaded.
-    func downloadImage(from url: URL?, completion: @escaping (UIImage?, Error?) -> Void) {
-        let session = URLSession(configuration: .default)
-        guard let url = url else { return }
-        let request = URLRequest(url: url)
-        let dataTask = session.dataTask(with: request) { data, response, error in
-            if let error = error {
-                completion(nil, error)
-                return
-            }
-            guard let data = data else { return }
-            let image = UIImage(data: data) // Create the image with data
-            completion(image, nil)
-        }
-        dataTask.resume()
-    }
 }

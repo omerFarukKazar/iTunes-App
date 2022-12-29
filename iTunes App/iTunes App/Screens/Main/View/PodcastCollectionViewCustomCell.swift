@@ -25,7 +25,7 @@ final class PodcastCollectionViewCell: UICollectionViewCell {
     }
     
     // Instantiate view elements
-    private lazy var imageView = UIImageView()
+    lazy var imageView = UIImageView()
     private lazy var titleLabel = UILabel()
     
     override init(frame: CGRect) {
