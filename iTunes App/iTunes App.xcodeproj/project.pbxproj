@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D2310762951B1D300D559EB /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2310752951B1D300D559EB /* iTunesAPI.swift */; };
+		9D4F90F22955E80D00846B49 /* PodcastCollectionViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F90F12955E80D00846B49 /* PodcastCollectionViewCustomCell.swift */; };
+		9DB2131D2951E1A700FD4BF4 /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */; };
+		9DB213202952188C00FD4BF4 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131F2952188C00FD4BF4 /* Podcast.swift */; };
+		9DF3843A295310BF0078DE3B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF38439295310BF0078DE3B /* MainView.swift */; };
 		9DF4DA2F294C801C0026C42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4DA2E294C801C0026C42E /* AppDelegate.swift */; };
 		9DF4DA31294C801C0026C42E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4DA30294C801C0026C42E /* SceneDelegate.swift */; };
 		9DF4DA33294C801C0026C42E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4DA32294C801C0026C42E /* MainViewController.swift */; };
 		9DF4DA38294C801D0026C42E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9DF4DA37294C801D0026C42E /* Assets.xcassets */; };
 		9DF4DA3B294C801D0026C42E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF4DA39294C801D0026C42E /* LaunchScreen.storyboard */; };
+		9DF922F6295DBE2F00C3CB50 /* UIImageView+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF922F5295DBE2F00C3CB50 /* UIImageView+Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D2310752951B1D300D559EB /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		9D4F90F12955E80D00846B49 /* PodcastCollectionViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCollectionViewCustomCell.swift; sourceTree = "<group>"; };
+		9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
+		9DB2131F2952188C00FD4BF4 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		9DF38439295310BF0078DE3B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9DF4DA2B294C801C0026C42E /* iTunes App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTunes App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF4DA2E294C801C0026C42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9DF4DA30294C801C0026C42E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -22,6 +33,7 @@
 		9DF4DA37294C801D0026C42E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9DF4DA3A294C801D0026C42E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9DF4DA3C294C801D0026C42E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9DF922F5295DBE2F00C3CB50 /* UIImageView+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Extensions.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,6 +50,8 @@
 		9D06A91D294C970A003C5846 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */,
+				9DB2131F2952188C00FD4BF4 /* Podcast.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -50,6 +64,46 @@
 				9DF4DA49294C89450026C42E /* Controller */,
 			);
 			path = Main;
+			sourceTree = "<group>";
+		};
+		9D2310732951B1BE00D559EB /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				9DF922F4295DBE1A00C3CB50 /* Extensions */,
+				9D2310742951B1C600D559EB /* Network */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		9D2310742951B1C600D559EB /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				9D2310752951B1D300D559EB /* iTunesAPI.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		9D815CA8295DB0D900E73236 /* DetailScreen */ = {
+			isa = PBXGroup;
+			children = (
+				9D815CAA295DB0EC00E73236 /* Controller */,
+				9D815CA9295DB0E800E73236 /* View */,
+			);
+			path = DetailScreen;
+			sourceTree = "<group>";
+		};
+		9D815CA9295DB0E800E73236 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D815CAA295DB0EC00E73236 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 		9DF4DA22294C801C0026C42E = {
@@ -80,6 +134,7 @@
 		9DF4DA42294C809A0026C42E /* App */ = {
 			isa = PBXGroup;
 			children = (
+				9D2310732951B1BE00D559EB /* Core */,
 				9DF4DA46294C80C10026C42E /* Assets */,
 				9DF4DA48294C80ED0026C42E /* Delegates */,
 				9DF4DA44294C80A70026C42E /* Plists */,
@@ -91,6 +146,7 @@
 		9DF4DA43294C809E0026C42E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
+				9D815CA8295DB0D900E73236 /* DetailScreen */,
 				9D06A91F294C9761003C5846 /* Main */,
 			);
 			path = Screens;
@@ -107,6 +163,8 @@
 		9DF4DA45294C80B40026C42E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				9DF38439295310BF0078DE3B /* MainView.swift */,
+				9D4F90F12955E80D00846B49 /* PodcastCollectionViewCustomCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -142,6 +200,14 @@
 				9DF4DA32294C801C0026C42E /* MainViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		9DF922F4295DBE1A00C3CB50 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				9DF922F5295DBE2F00C3CB50 /* UIImageView+Extensions.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -214,9 +280,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DB2131D2951E1A700FD4BF4 /* PodcastResponse.swift in Sources */,
+				9DF3843A295310BF0078DE3B /* MainView.swift in Sources */,
+				9D2310762951B1D300D559EB /* iTunesAPI.swift in Sources */,
+				9DF922F6295DBE2F00C3CB50 /* UIImageView+Extensions.swift in Sources */,
+				9DB213202952188C00FD4BF4 /* Podcast.swift in Sources */,
 				9DF4DA33294C801C0026C42E /* MainViewController.swift in Sources */,
 				9DF4DA2F294C801C0026C42E /* AppDelegate.swift in Sources */,
 				9DF4DA31294C801C0026C42E /* SceneDelegate.swift in Sources */,
+				9D4F90F22955E80D00846B49 /* PodcastCollectionViewCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
