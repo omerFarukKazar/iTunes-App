@@ -38,20 +38,6 @@ final  class MainViewController: UIViewController {
         }
     }
     
-    /// Fetches the image corresponds to the current cell's image url and changes that cell's imageview to fetched image.
-    /// - Parameters:
-    ///     - url: URL of the image which comes from Podcast model.
-    ///     - cell: Current collectionviewcell when this function is called.
-    private func fetchImageFrom(_ url: URL?, _ cell: PodcastCollectionViewCell) {
-        iTunesAPI.shared.downloadImage(from: url) { image, error in
-            if let error = error {
-                fatalError(error.localizedDescription)
-            }
-            guard let image = image else { return }
-            cell.image = image
-        }
-    }
-
 }
 
 // MARK: - UICollectionViewDelegate
@@ -72,7 +58,7 @@ extension MainViewController: UICollectionViewDataSource {
         let url = podcast?.artworkLarge // url of the image.
         
         cell.title = podcast?.trackName
-        fetchImageFrom(url, cell)
+        cell.imageView.downloadImage(url: url)
         return cell
     }
 }
