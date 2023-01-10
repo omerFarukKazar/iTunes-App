@@ -43,7 +43,9 @@ final  class MainViewController: UIViewController {
 // MARK: - UICollectionViewDelegate
 extension MainViewController: UICollectionViewDelegate {
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
-        print("\(indexPath.row)")
+        let detailViewController = DetailViewController()
+        detailViewController.podcast = podcastResponse?.results?[indexPath.row] // Passing the data
+        navigationController?.pushViewController(detailViewController, animated: true)
     }
 }
 // MARK: - UICollectionViewDataSource

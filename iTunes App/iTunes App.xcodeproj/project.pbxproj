@@ -7,10 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9D0054CC296D7B780015BB64 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0054CB296D7B780015BB64 /* DetailView.swift */; };
 		9D2310762951B1D300D559EB /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2310752951B1D300D559EB /* iTunesAPI.swift */; };
 		9D4F90F22955E80D00846B49 /* PodcastCollectionViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F90F12955E80D00846B49 /* PodcastCollectionViewCustomCell.swift */; };
 		9DB2131D2951E1A700FD4BF4 /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */; };
 		9DB213202952188C00FD4BF4 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131F2952188C00FD4BF4 /* Podcast.swift */; };
+		9DCD9154296D8613008C4F0B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD9153296D8613008C4F0B /* DetailViewController.swift */; };
 		9DF3843A295310BF0078DE3B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF38439295310BF0078DE3B /* MainView.swift */; };
 		9DF4DA2F294C801C0026C42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4DA2E294C801C0026C42E /* AppDelegate.swift */; };
 		9DF4DA31294C801C0026C42E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4DA30294C801C0026C42E /* SceneDelegate.swift */; };
@@ -21,10 +23,12 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		9D0054CB296D7B780015BB64 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		9D2310752951B1D300D559EB /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
 		9D4F90F12955E80D00846B49 /* PodcastCollectionViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCollectionViewCustomCell.swift; sourceTree = "<group>"; };
 		9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
 		9DB2131F2952188C00FD4BF4 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		9DCD9153296D8613008C4F0B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		9DF38439295310BF0078DE3B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9DF4DA2B294C801C0026C42E /* iTunes App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTunes App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF4DA2E294C801C0026C42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,6 +51,31 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D0054C8296D7AEB0015BB64 /* Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9D0054CA296D7AFB0015BB64 /* Controller */,
+				9D0054C9296D7AF80015BB64 /* View */,
+			);
+			path = "Detail Screen";
+			sourceTree = "<group>";
+		};
+		9D0054C9296D7AF80015BB64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D0054CB296D7B780015BB64 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D0054CA296D7AFB0015BB64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DCD9153296D8613008C4F0B /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9D06A91D294C970A003C5846 /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -81,29 +110,6 @@
 				9D2310752951B1D300D559EB /* iTunesAPI.swift */,
 			);
 			path = Network;
-			sourceTree = "<group>";
-		};
-		9D815CA8295DB0D900E73236 /* DetailScreen */ = {
-			isa = PBXGroup;
-			children = (
-				9D815CAA295DB0EC00E73236 /* Controller */,
-				9D815CA9295DB0E800E73236 /* View */,
-			);
-			path = DetailScreen;
-			sourceTree = "<group>";
-		};
-		9D815CA9295DB0E800E73236 /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		9D815CAA295DB0EC00E73236 /* Controller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Controller;
 			sourceTree = "<group>";
 		};
 		9DF4DA22294C801C0026C42E = {
@@ -146,7 +152,7 @@
 		9DF4DA43294C809E0026C42E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				9D815CA8295DB0D900E73236 /* DetailScreen */,
+				9D0054C8296D7AEB0015BB64 /* Detail Screen */,
 				9D06A91F294C9761003C5846 /* Main */,
 			);
 			path = Screens;
@@ -280,7 +286,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DCD9154296D8613008C4F0B /* DetailViewController.swift in Sources */,
 				9DB2131D2951E1A700FD4BF4 /* PodcastResponse.swift in Sources */,
+				9D0054CC296D7B780015BB64 /* DetailView.swift in Sources */,
 				9DF3843A295310BF0078DE3B /* MainView.swift in Sources */,
 				9D2310762951B1D300D559EB /* iTunesAPI.swift in Sources */,
 				9DF922F6295DBE2F00C3CB50 /* UIImageView+Extensions.swift in Sources */,

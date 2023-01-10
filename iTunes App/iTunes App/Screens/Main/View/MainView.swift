@@ -32,7 +32,7 @@ final class MainView: UIView {
     // MARK: - Methods
     private func setupCollectionViewLayout() {
         addSubview(collectionView)
-        collectionView.backgroundColor = .systemTeal
+        collectionView.backgroundColor = .systemBackground
         collectionView.translatesAutoresizingMaskIntoConstraints = false
         NSLayoutConstraint.activate([collectionView.topAnchor.constraint(equalTo: self.topAnchor),
                                      collectionView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
