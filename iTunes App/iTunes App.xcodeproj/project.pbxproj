@@ -13,6 +13,7 @@
 		9DB2131D2951E1A700FD4BF4 /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */; };
 		9DB213202952188C00FD4BF4 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131F2952188C00FD4BF4 /* Podcast.swift */; };
 		9DCD9154296D8613008C4F0B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD9153296D8613008C4F0B /* DetailViewController.swift */; };
+		9DCD9156296DA2B4008C4F0B /* iTALabelStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD9155296DA2B4008C4F0B /* iTALabelStack.swift */; };
 		9DF3843A295310BF0078DE3B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF38439295310BF0078DE3B /* MainView.swift */; };
 		9DF4DA2F294C801C0026C42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4DA2E294C801C0026C42E /* AppDelegate.swift */; };
 		9DF4DA31294C801C0026C42E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4DA30294C801C0026C42E /* SceneDelegate.swift */; };
@@ -29,6 +30,7 @@
 		9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
 		9DB2131F2952188C00FD4BF4 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		9DCD9153296D8613008C4F0B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9DCD9155296DA2B4008C4F0B /* iTALabelStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTALabelStack.swift; sourceTree = "<group>"; };
 		9DF38439295310BF0078DE3B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9DF4DA2B294C801C0026C42E /* iTunes App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTunes App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF4DA2E294C801C0026C42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		9D2310732951B1BE00D559EB /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				9DCD9157296DA2D4008C4F0B /* iTAKit */,
 				9DF922F4295DBE1A00C3CB50 /* Extensions */,
 				9D2310742951B1C600D559EB /* Network */,
 			);
@@ -110,6 +113,14 @@
 				9D2310752951B1D300D559EB /* iTunesAPI.swift */,
 			);
 			path = Network;
+			sourceTree = "<group>";
+		};
+		9DCD9157296DA2D4008C4F0B /* iTAKit */ = {
+			isa = PBXGroup;
+			children = (
+				9DCD9155296DA2B4008C4F0B /* iTALabelStack.swift */,
+			);
+			path = iTAKit;
 			sourceTree = "<group>";
 		};
 		9DF4DA22294C801C0026C42E = {
@@ -293,6 +304,7 @@
 				9D2310762951B1D300D559EB /* iTunesAPI.swift in Sources */,
 				9DF922F6295DBE2F00C3CB50 /* UIImageView+Extensions.swift in Sources */,
 				9DB213202952188C00FD4BF4 /* Podcast.swift in Sources */,
+				9DCD9156296DA2B4008C4F0B /* iTALabelStack.swift in Sources */,
 				9DF4DA33294C801C0026C42E /* MainViewController.swift in Sources */,
 				9DF4DA2F294C801C0026C42E /* AppDelegate.swift in Sources */,
 				9DF4DA31294C801C0026C42E /* SceneDelegate.swift in Sources */,

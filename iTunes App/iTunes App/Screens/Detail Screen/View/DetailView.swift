@@ -7,39 +7,58 @@
 
 import UIKit
 
+enum LabelKeys: String, CaseIterable {
+    case artist = "Artist:"
+    case releaseDate = "Release Date:"
+    case country = "Country:"
+    case genre = "Genres:"
+    
+    /*  func KeyType() -> String { // Could be done this way without using Raw Values
+        switch self {
+        case .artist:
+            return "Artist:"
+        case .releaseDate:
+            return "Release Date:"
+        case .country:
+            return "Country:"
+        case .genre:
+            return "Genres:"
+        }
+    }
+*/
+}
+
 final class DetailView: UIView {
     // MARK: - Properties
     var artistName: String? {
         didSet {
-            artistNameLabel.text = "Artist: \(artistName ?? "-")"
+            artistNameLabel.valueLabel.text =  artistName
         }
     }
     var releaseDate: String? {
         didSet {
-            releaseDateLabel.text = "Release Date: \(releaseDate ?? "-")"
+            releaseDateLabel.valueLabel.text =  releaseDate
         }
     }
-
     var country: String? {
         didSet {
-            countryLabel.text = "Country: \(country ?? "-")"
+            countryLabel.valueLabel.text =  country
         }
     }
-
     var genre: String? {
         didSet {
-            genreLabel.text = "Genre: \(genre ?? "-")"
+            genreLabel.valueLabel.text =  genre
         }
     }
-
+    
     lazy var labelArray = [artistNameLabel, releaseDateLabel, countryLabel, genreLabel]
     
     // MARK: - UI Elements
     lazy var imageView = UIImageView()  
-    private lazy var artistNameLabel = UILabel()
-    private lazy var releaseDateLabel = UILabel()
-    private lazy var countryLabel = UILabel()
-    private lazy var genreLabel = UILabel()
+    private lazy var artistNameLabel = iTALabelStack(key: LabelKeys.artist.rawValue, value: artistName ?? "-")
+    private lazy var releaseDateLabel = iTALabelStack(key: LabelKeys.releaseDate.rawValue, value: releaseDate ?? "-")
+    private lazy var countryLabel = iTALabelStack(key: LabelKeys.country.rawValue, value: country ?? "-")
+    private lazy var genreLabel = iTALabelStack(key: LabelKeys.genre.rawValue, value: genre ?? "-")
     private lazy var stackView: UIStackView = {
         let s = UIStackView(frame: self.bounds)
         s.axis = .vertical
@@ -48,7 +67,6 @@ final class DetailView: UIView {
         s.spacing = 8.0
         
         for label in labelArray { // It's easier.
-            label.numberOfLines = 0
             s.addArrangedSubview(label)
         }
         
