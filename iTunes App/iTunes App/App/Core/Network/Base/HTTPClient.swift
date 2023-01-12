@@ -23,7 +23,19 @@ extension HTTPClient {
         urlComponents.path = endpoint.path
         
 //        guard let url = urlComponents.url else { return .failure(.invalidURL) }
-        guard let url = URL(string: "https://itunes.apple.com/search?term=podcast") else { return .failure(.invalidURL)}
+        guard var url = URL(string: "https://itunes.apple.com/search?term=podcast") else { return .failure(.invalidURL) }
+        switch T.self {
+        case is PodcastResponse.Type:
+            url = URL(string: "https://itunes.apple.com/search?term=podcast") ?? URL(string: "")!
+        case is EBookResponse.Type:
+            url = URL(string: "https://itunes.apple.com/search?term=book") ?? URL(string: "")!
+        case is MusicResponse.Type:
+            url = URL(string: "https://itunes.apple.com/search?term=music") ?? URL(string: "")!
+        default:
+            return .failure(.invalidURL)
+        }
+        print(url)
+//        guard let url = URL(string: "https://itunes.apple.com/search?term=podcast") else { return .failure(.invalidURL)}
         
         // Building request
         var request = URLRequest(url: url)

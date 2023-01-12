@@ -22,7 +22,7 @@ final class MainView: UIView {
     init() {
         super.init(frame: .zero)
         setupCollectionViewLayout()
-        collectionView.register(PodcastCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
+        collectionView.register(CustomCollectionViewCell.self, forCellWithReuseIdentifier: "cell")
     }
     
     required init?(coder: NSCoder) {

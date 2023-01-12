@@ -58,7 +58,7 @@ final class MainViewController: UIViewController {
             }
         }
     }
-        
+    
 }
 
 // MARK: - UICollectionViewDelegate
@@ -76,7 +76,7 @@ extension MainViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! PodcastCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "cell", for: indexPath) as! CustomCollectionViewCell
         let podcast = podcastResponse?.results?[indexPath.row] // Response from API for that indexPath
         let url = podcast?.artworkLarge // url of the image.
         

@@ -11,7 +11,7 @@ protocol EBooksServiceable {
     func getBooks() async -> Result<EBookResponse, RequestError>
 }
 
-struct EBookService: HTTPClient, EBooksServiceable {
+struct EBooksService: HTTPClient, EBooksServiceable {
     func getBooks() async -> Result<EBookResponse, RequestError> {
         return await sendRequest(endpoint: iTunesEndpoint.book , responseModel: EBookResponse.self)
     }

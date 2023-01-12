@@ -9,5 +9,5 @@ import Foundation
 
 struct EBookResponse: Decodable {
     let resultCount: Int?
-    let result: [EBook]?
+    let results: [EBook]?
 }

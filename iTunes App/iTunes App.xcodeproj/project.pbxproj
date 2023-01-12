@@ -12,6 +12,8 @@
 		9D6B0E19297051D10080406D /* EBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B0E18297051D10080406D /* EBooksService.swift */; };
 		9D6B0E1B297051E80080406D /* MusicsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B0E1A297051E80080406D /* MusicsService.swift */; };
 		9D6B0E1D297076670080406D /* OldiTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B0E1C297076670080406D /* OldiTunesAPI.swift */; };
+		9D6B0E21297078A50080406D /* EBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B0E20297078A50080406D /* EBooksViewController.swift */; };
+		9D6B0E23297078C00080406D /* MusicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B0E22297078C00080406D /* MusicsViewController.swift */; };
 		9DB2131D2951E1A700FD4BF4 /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */; };
 		9DB213202952188C00FD4BF4 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131F2952188C00FD4BF4 /* Podcast.swift */; };
 		9DCD9154296D8613008C4F0B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD9153296D8613008C4F0B /* DetailViewController.swift */; };
@@ -41,6 +43,8 @@
 		9D6B0E18297051D10080406D /* EBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBooksService.swift; sourceTree = "<group>"; };
 		9D6B0E1A297051E80080406D /* MusicsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsService.swift; sourceTree = "<group>"; };
 		9D6B0E1C297076670080406D /* OldiTunesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldiTunesAPI.swift; sourceTree = "<group>"; };
+		9D6B0E20297078A50080406D /* EBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBooksViewController.swift; sourceTree = "<group>"; };
+		9D6B0E22297078C00080406D /* MusicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsViewController.swift; sourceTree = "<group>"; };
 		9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
 		9DB2131F2952188C00FD4BF4 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
 		9DCD9153296D8613008C4F0B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -275,6 +279,8 @@
 			isa = PBXGroup;
 			children = (
 				9DF4DA32294C801C0026C42E /* MainViewController.swift */,
+				9D6B0E20297078A50080406D /* EBooksViewController.swift */,
+				9D6B0E22297078C00080406D /* MusicsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -357,6 +363,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6B0E21297078A50080406D /* EBooksViewController.swift in Sources */,
 				9DD83C58296F5E2800E6381E /* RequestError.swift in Sources */,
 				9DCD9154296D8613008C4F0B /* DetailViewController.swift in Sources */,
 				9DB2131D2951E1A700FD4BF4 /* PodcastResponse.swift in Sources */,
@@ -364,6 +371,7 @@
 				9D6B0E1D297076670080406D /* OldiTunesAPI.swift in Sources */,
 				9D0054CC296D7B780015BB64 /* DetailView.swift in Sources */,
 				9DD83C51296F5E0800E6381E /* Endpoint.swift in Sources */,
+				9D6B0E23297078C00080406D /* MusicsViewController.swift in Sources */,
 				9DF3843A295310BF0078DE3B /* MainView.swift in Sources */,
 				9DD83C64296F76E100E6381E /* Music.swift in Sources */,
 				9D6B0E19297051D10080406D /* EBooksService.swift in Sources */,

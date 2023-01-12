@@ -21,6 +21,17 @@ final class DetailViewController: UIViewController {
         }
     }
     
+    var eBook: EBook? {
+        didSet {
+            title = eBook?.trackName
+            detailView.imageView.downloadImage(url: eBook?.artworkUrl100)
+            detailView.artistName = eBook?.artistName
+            detailView.releaseDate = eBook?.releaseDate
+            detailView.country = eBook?.country
+            detailView.genre = eBook?.primaryGenreName
+        }
+    }
+    
     private let detailView = DetailView()
     
     // MARK: - Lifecycle Methods

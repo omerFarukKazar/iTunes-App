@@ -10,9 +10,9 @@ import Foundation
 struct EBook: Decodable {
     let artistName: String?
     let country: String?
-    let releaseDate: Date?
+    let releaseDate: String?
     let trackName: String?
-    let previewURL: String?
-    let artworkUrl600: String?
-    let genres: [String]?
+    let previewURL: URL?
+    let artworkUrl100: URL?
+    let primaryGenreName: String?
 }
