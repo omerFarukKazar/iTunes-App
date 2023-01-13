@@ -12,9 +12,9 @@ final class CustomCollectionViewCell: UICollectionViewCell {
     // MARK: - Properties
     var image: UIImage? {
         didSet{
-//            DispatchQueue.main.async {
+            DispatchQueue.main.async {
                 self.imageView.image = self.image
-//            }
+            }
         }
     }
     

@@ -24,7 +24,6 @@ final class MainViewController: UIViewController {
         view = mainView // mainView is now our view.
         mainView.setCollectionViewDelegate(self, andDataSource: self)
         fetchPodcasts()
-        
     }
     
     init(service: PodcastsServiceable) {
@@ -81,7 +80,10 @@ extension MainViewController: UICollectionViewDataSource {
         let url = podcast?.artworkLarge // url of the image.
         
         cell.title = podcast?.trackName
-        cell.imageView.downloadImage(url: url)
+        DispatchQueue.main.async {
+            cell.imageView.downloadImage(url: url)
+        }
+        
         return cell
     }
 }

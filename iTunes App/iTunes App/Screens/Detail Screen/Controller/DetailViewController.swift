@@ -21,7 +21,7 @@ final class DetailViewController: UIViewController {
         }
     }
     
-    var eBook: EBook? {
+    var eBook: EBook? { // A generic model and generic data passes could be written 
         didSet {
             title = eBook?.trackName
             detailView.imageView.downloadImage(url: eBook?.artworkUrl100)
@@ -29,6 +29,17 @@ final class DetailViewController: UIViewController {
             detailView.releaseDate = eBook?.releaseDate
             detailView.country = eBook?.country
             detailView.genre = eBook?.primaryGenreName
+        }
+    }
+    
+    var music: Music? {
+        didSet {
+            title = music?.trackName
+            detailView.imageView.downloadImage(url: music?.artworkUrl100)
+            detailView.artistName = music?.artistName
+            detailView.releaseDate = music?.releaseDate
+            detailView.country = music?.country
+            detailView.genre = music?.primaryGenreName
         }
     }
     

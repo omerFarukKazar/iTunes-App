@@ -10,14 +10,13 @@ import UIKit
 final class EBooksViewController: UIViewController {
 
     // MARK: - Properties
-    let mainView = MainView()
-    let service: EBooksServiceable?
+    private let mainView = MainView()
+    private let service: EBooksServiceable?
     private var eBookResponse: EBookResponse? {
         didSet {
             mainView.refresh()
         }
     }
-//    let eBooks: EBookResponse?
     // MARK: - Lifecycle Methods
     override func viewDidLoad() {
         super.viewDidLoad()

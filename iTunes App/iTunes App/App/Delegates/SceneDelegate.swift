@@ -52,7 +52,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         let podcastViewController = MainViewController(service: PodcastsService()) // Dependency Injection
         let booksViewController = EBooksViewController(service: EBooksService())
-        let musicsViewController = MusicsViewController()
+        let musicsViewController = MusicsViewController(service: MusicsService())
         
         podcastViewController.title = "Podcast"
         booksViewController.title = "Books"

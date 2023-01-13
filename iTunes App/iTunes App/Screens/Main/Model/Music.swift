@@ -12,7 +12,8 @@ struct Music: Decodable {
     let trackName: String?
     let previewURL: URL?
     let artworkUrl100: URL?
-    let releaseDate: Date?
-    let genres: [String]?
+    let releaseDate: String?
+    let country: String?
+    let primaryGenreName: String?
     
 }
