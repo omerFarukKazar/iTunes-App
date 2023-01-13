@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Podcast: Decodable { // model for results in PodcastResponse file
+struct Podcast: Codable { // model for results in PodcastResponse file
     let artistName: String?
     let trackName: String?
     let artworkLarge: URL?

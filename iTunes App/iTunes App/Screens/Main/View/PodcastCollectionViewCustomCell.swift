@@ -7,7 +7,7 @@
 
 import UIKit
 
-final class PodcastCollectionViewCell: UICollectionViewCell {
+final class CustomCollectionViewCell: UICollectionViewCell {
     
     // MARK: - Properties
     var image: UIImage? {

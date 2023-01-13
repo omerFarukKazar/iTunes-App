@@ -50,11 +50,21 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
     private func setupWindow(with windowScene: UIWindowScene) { // Necessary settings to use programmatic UI
         let window = UIWindow(windowScene: windowScene)
-        let viewController = MainViewController()
-        let navigationController = UINavigationController(rootViewController: viewController)
+        let podcastViewController = MainViewController(service: PodcastsService()) // Dependency Injection
+        let booksViewController = EBooksViewController(service: EBooksService())
+        let musicsViewController = MusicsViewController(service: MusicsService())
+        
+        podcastViewController.title = "Podcast"
+        booksViewController.title = "Books"
+        musicsViewController.title = "Musics"
+        
+        let tabBarController = UITabBarController()
+        tabBarController.viewControllers = [podcastViewController, booksViewController, musicsViewController]
+
+        let navigationController = UINavigationController(rootViewController: tabBarController)
+        
         window.rootViewController = navigationController
         window.makeKeyAndVisible()
         self.window = window
     }
 }
-

@@ -7,10 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9D2310762951B1D300D559EB /* iTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D2310752951B1D300D559EB /* iTunesAPI.swift */; };
+		9D0054CC296D7B780015BB64 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0054CB296D7B780015BB64 /* DetailView.swift */; };
 		9D4F90F22955E80D00846B49 /* PodcastCollectionViewCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D4F90F12955E80D00846B49 /* PodcastCollectionViewCustomCell.swift */; };
+		9D6B0E19297051D10080406D /* EBooksService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B0E18297051D10080406D /* EBooksService.swift */; };
+		9D6B0E1B297051E80080406D /* MusicsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B0E1A297051E80080406D /* MusicsService.swift */; };
+		9D6B0E1D297076670080406D /* OldiTunesAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B0E1C297076670080406D /* OldiTunesAPI.swift */; };
+		9D6B0E21297078A50080406D /* EBooksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B0E20297078A50080406D /* EBooksViewController.swift */; };
+		9D6B0E23297078C00080406D /* MusicsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D6B0E22297078C00080406D /* MusicsViewController.swift */; };
 		9DB2131D2951E1A700FD4BF4 /* PodcastResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */; };
 		9DB213202952188C00FD4BF4 /* Podcast.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DB2131F2952188C00FD4BF4 /* Podcast.swift */; };
+		9DCD9154296D8613008C4F0B /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD9153296D8613008C4F0B /* DetailViewController.swift */; };
+		9DCD9156296DA2B4008C4F0B /* iTALabelStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCD9155296DA2B4008C4F0B /* iTALabelStack.swift */; };
+		9DD83C51296F5E0800E6381E /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83C50296F5E0800E6381E /* Endpoint.swift */; };
+		9DD83C54296F5E1500E6381E /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83C53296F5E1500E6381E /* HTTPMethod.swift */; };
+		9DD83C56296F5E1F00E6381E /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83C55296F5E1F00E6381E /* HTTPClient.swift */; };
+		9DD83C58296F5E2800E6381E /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83C57296F5E2800E6381E /* RequestError.swift */; };
+		9DD83C5A296F5E3700E6381E /* iTunesEndpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83C59296F5E3700E6381E /* iTunesEndpoints.swift */; };
+		9DD83C5C296F5E3F00E6381E /* PodcastsService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83C5B296F5E3F00E6381E /* PodcastsService.swift */; };
+		9DD83C5E296F760A00E6381E /* EBookResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83C5D296F760A00E6381E /* EBookResponse.swift */; };
+		9DD83C60296F76D300E6381E /* EBook.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83C5F296F76D300E6381E /* EBook.swift */; };
+		9DD83C62296F76DA00E6381E /* MusicResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83C61296F76DA00E6381E /* MusicResponse.swift */; };
+		9DD83C64296F76E100E6381E /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DD83C63296F76E100E6381E /* Music.swift */; };
 		9DF3843A295310BF0078DE3B /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF38439295310BF0078DE3B /* MainView.swift */; };
 		9DF4DA2F294C801C0026C42E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4DA2E294C801C0026C42E /* AppDelegate.swift */; };
 		9DF4DA31294C801C0026C42E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF4DA30294C801C0026C42E /* SceneDelegate.swift */; };
@@ -21,10 +38,27 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		9D2310752951B1D300D559EB /* iTunesAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesAPI.swift; sourceTree = "<group>"; };
+		9D0054CB296D7B780015BB64 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
 		9D4F90F12955E80D00846B49 /* PodcastCollectionViewCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastCollectionViewCustomCell.swift; sourceTree = "<group>"; };
+		9D6B0E18297051D10080406D /* EBooksService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBooksService.swift; sourceTree = "<group>"; };
+		9D6B0E1A297051E80080406D /* MusicsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsService.swift; sourceTree = "<group>"; };
+		9D6B0E1C297076670080406D /* OldiTunesAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OldiTunesAPI.swift; sourceTree = "<group>"; };
+		9D6B0E20297078A50080406D /* EBooksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBooksViewController.swift; sourceTree = "<group>"; };
+		9D6B0E22297078C00080406D /* MusicsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicsViewController.swift; sourceTree = "<group>"; };
 		9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastResponse.swift; sourceTree = "<group>"; };
 		9DB2131F2952188C00FD4BF4 /* Podcast.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Podcast.swift; sourceTree = "<group>"; };
+		9DCD9153296D8613008C4F0B /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		9DCD9155296DA2B4008C4F0B /* iTALabelStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTALabelStack.swift; sourceTree = "<group>"; };
+		9DD83C50296F5E0800E6381E /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		9DD83C53296F5E1500E6381E /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
+		9DD83C55296F5E1F00E6381E /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		9DD83C57296F5E2800E6381E /* RequestError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestError.swift; sourceTree = "<group>"; };
+		9DD83C59296F5E3700E6381E /* iTunesEndpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iTunesEndpoints.swift; sourceTree = "<group>"; };
+		9DD83C5B296F5E3F00E6381E /* PodcastsService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PodcastsService.swift; sourceTree = "<group>"; };
+		9DD83C5D296F760A00E6381E /* EBookResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBookResponse.swift; sourceTree = "<group>"; };
+		9DD83C5F296F76D300E6381E /* EBook.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EBook.swift; sourceTree = "<group>"; };
+		9DD83C61296F76DA00E6381E /* MusicResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicResponse.swift; sourceTree = "<group>"; };
+		9DD83C63296F76E100E6381E /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 		9DF38439295310BF0078DE3B /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
 		9DF4DA2B294C801C0026C42E /* iTunes App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iTunes App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		9DF4DA2E294C801C0026C42E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -47,11 +81,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		9D0054C8296D7AEB0015BB64 /* Detail Screen */ = {
+			isa = PBXGroup;
+			children = (
+				9D0054CA296D7AFB0015BB64 /* Controller */,
+				9D0054C9296D7AF80015BB64 /* View */,
+			);
+			path = "Detail Screen";
+			sourceTree = "<group>";
+		};
+		9D0054C9296D7AF80015BB64 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9D0054CB296D7B780015BB64 /* DetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9D0054CA296D7AFB0015BB64 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9DCD9153296D8613008C4F0B /* DetailViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		9D06A91D294C970A003C5846 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				9DB2131C2951E1A700FD4BF4 /* PodcastResponse.swift */,
 				9DB2131F2952188C00FD4BF4 /* Podcast.swift */,
+				9DD83C5D296F760A00E6381E /* EBookResponse.swift */,
+				9DD83C5F296F76D300E6381E /* EBook.swift */,
+				9DD83C61296F76DA00E6381E /* MusicResponse.swift */,
+				9DD83C63296F76E100E6381E /* Music.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -69,6 +132,8 @@
 		9D2310732951B1BE00D559EB /* Core */ = {
 			isa = PBXGroup;
 			children = (
+            
+				9DCD9157296DA2D4008C4F0B /* iTAKit */,
 				9DF922F4295DBE1A00C3CB50 /* Extensions */,
 				9D2310742951B1C600D559EB /* Network */,
 			);
@@ -78,32 +143,49 @@
 		9D2310742951B1C600D559EB /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				9D2310752951B1D300D559EB /* iTunesAPI.swift */,
+				9D6B0E1C297076670080406D /* OldiTunesAPI.swift */,
+				9DD83C4F296F5DEC00E6381E /* Services */,
+				9DD83C4E296F5DE800E6381E /* EndPoints */,
+				9DD83C4D296F5DE000E6381E /* Base */,
 			);
 			path = Network;
 			sourceTree = "<group>";
 		};
-		9D815CA8295DB0D900E73236 /* DetailScreen */ = {
+		9DCD9157296DA2D4008C4F0B /* iTAKit */ = {
 			isa = PBXGroup;
 			children = (
-				9D815CAA295DB0EC00E73236 /* Controller */,
-				9D815CA9295DB0E800E73236 /* View */,
+				9DCD9155296DA2B4008C4F0B /* iTALabelStack.swift */,
 			);
-			path = DetailScreen;
+			path = iTAKit;
 			sourceTree = "<group>";
 		};
-		9D815CA9295DB0E800E73236 /* View */ = {
+		9DD83C4D296F5DE000E6381E /* Base */ = {
 			isa = PBXGroup;
 			children = (
+				9DD83C50296F5E0800E6381E /* Endpoint.swift */,
+				9DD83C53296F5E1500E6381E /* HTTPMethod.swift */,
+				9DD83C55296F5E1F00E6381E /* HTTPClient.swift */,
+				9DD83C57296F5E2800E6381E /* RequestError.swift */,
 			);
-			path = View;
+			path = Base;
 			sourceTree = "<group>";
 		};
-		9D815CAA295DB0EC00E73236 /* Controller */ = {
+		9DD83C4E296F5DE800E6381E /* EndPoints */ = {
 			isa = PBXGroup;
 			children = (
+				9DD83C59296F5E3700E6381E /* iTunesEndpoints.swift */,
 			);
-			path = Controller;
+			path = EndPoints;
+			sourceTree = "<group>";
+		};
+		9DD83C4F296F5DEC00E6381E /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				9DD83C5B296F5E3F00E6381E /* PodcastsService.swift */,
+				9D6B0E18297051D10080406D /* EBooksService.swift */,
+				9D6B0E1A297051E80080406D /* MusicsService.swift */,
+			);
+			path = Services;
 			sourceTree = "<group>";
 		};
 		9DF4DA22294C801C0026C42E = {
@@ -146,7 +228,8 @@
 		9DF4DA43294C809E0026C42E /* Screens */ = {
 			isa = PBXGroup;
 			children = (
-				9D815CA8295DB0D900E73236 /* DetailScreen */,
+
+				9D0054C8296D7AEB0015BB64 /* Detail Screen */,
 				9D06A91F294C9761003C5846 /* Main */,
 			);
 			path = Screens;
@@ -198,6 +281,8 @@
 			isa = PBXGroup;
 			children = (
 				9DF4DA32294C801C0026C42E /* MainViewController.swift */,
+				9D6B0E20297078A50080406D /* EBooksViewController.swift */,
+				9D6B0E22297078C00080406D /* MusicsViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -280,14 +365,31 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9D6B0E21297078A50080406D /* EBooksViewController.swift in Sources */,
+				9DD83C58296F5E2800E6381E /* RequestError.swift in Sources */,
+				9DCD9154296D8613008C4F0B /* DetailViewController.swift in Sources */,
 				9DB2131D2951E1A700FD4BF4 /* PodcastResponse.swift in Sources */,
+				9DD83C54296F5E1500E6381E /* HTTPMethod.swift in Sources */,
+				9D6B0E1D297076670080406D /* OldiTunesAPI.swift in Sources */,
+				9D0054CC296D7B780015BB64 /* DetailView.swift in Sources */,
+				9DD83C51296F5E0800E6381E /* Endpoint.swift in Sources */,
+				9D6B0E23297078C00080406D /* MusicsViewController.swift in Sources */,
 				9DF3843A295310BF0078DE3B /* MainView.swift in Sources */,
-				9D2310762951B1D300D559EB /* iTunesAPI.swift in Sources */,
+				9DD83C64296F76E100E6381E /* Music.swift in Sources */,
+				9D6B0E19297051D10080406D /* EBooksService.swift in Sources */,
 				9DF922F6295DBE2F00C3CB50 /* UIImageView+Extensions.swift in Sources */,
+				9D6B0E1B297051E80080406D /* MusicsService.swift in Sources */,
 				9DB213202952188C00FD4BF4 /* Podcast.swift in Sources */,
+				9DCD9156296DA2B4008C4F0B /* iTALabelStack.swift in Sources */,
+				9DD83C5A296F5E3700E6381E /* iTunesEndpoints.swift in Sources */,
 				9DF4DA33294C801C0026C42E /* MainViewController.swift in Sources */,
+				9DD83C56296F5E1F00E6381E /* HTTPClient.swift in Sources */,
+				9DD83C5C296F5E3F00E6381E /* PodcastsService.swift in Sources */,
 				9DF4DA2F294C801C0026C42E /* AppDelegate.swift in Sources */,
+				9DD83C5E296F760A00E6381E /* EBookResponse.swift in Sources */,
 				9DF4DA31294C801C0026C42E /* SceneDelegate.swift in Sources */,
+				9DD83C62296F76DA00E6381E /* MusicResponse.swift in Sources */,
+				9DD83C60296F76D300E6381E /* EBook.swift in Sources */,
 				9D4F90F22955E80D00846B49 /* PodcastCollectionViewCustomCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

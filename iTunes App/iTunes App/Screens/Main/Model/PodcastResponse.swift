@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct PodcastResponse: Decodable { // This is the model corresponding to JSON object
+struct PodcastResponse: Codable { // This is the model corresponding to JSON object
     let resultCount: Int?
     let results: [Podcast]?
 }
