@@ -57,7 +57,11 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         podcastViewController.title = "Podcast"
         booksViewController.title = "Books"
         musicsViewController.title = "Musics"
-        
+
+        podcastViewController.tabBarItem.image = UIImage(systemName: "mic")
+        booksViewController.tabBarItem.image = UIImage(systemName: "book")
+        musicsViewController.tabBarItem.image = UIImage(systemName: "music.note")
+
         let tabBarController = UITabBarController()
         tabBarController.viewControllers = [podcastViewController, booksViewController, musicsViewController]
 
