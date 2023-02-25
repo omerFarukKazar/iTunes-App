@@ -15,7 +15,7 @@ final class DetailViewController: UIViewController {
             title = podcast?.trackName
             detailView.imageView.downloadImage(url: podcast?.artworkLarge)
             detailView.artistName = podcast?.artistName
-            detailView.releaseDate = podcast?.releaseDate
+            detailView.releaseDate = podcast?.beautifiedReleaseDate
             detailView.country = podcast?.country
             detailView.genre = podcast?.genres?.reduce("") {$1 + ", " + $0 } // Got rid of the braces that comes from array
         }
@@ -26,7 +26,7 @@ final class DetailViewController: UIViewController {
             title = eBook?.trackName
             detailView.imageView.downloadImage(url: eBook?.artworkUrl100)
             detailView.artistName = eBook?.artistName
-            detailView.releaseDate = eBook?.releaseDate
+            detailView.releaseDate = eBook?.beautifiedReleaseDate
             detailView.country = eBook?.country
             detailView.genre = eBook?.primaryGenreName
         }
@@ -37,7 +37,7 @@ final class DetailViewController: UIViewController {
             title = music?.trackName
             detailView.imageView.downloadImage(url: music?.artworkUrl100)
             detailView.artistName = music?.artistName
-            detailView.releaseDate = music?.releaseDate
+            detailView.releaseDate = music?.beautifiedReleaseDate
             detailView.country = music?.country
             detailView.genre = music?.primaryGenreName
         }
