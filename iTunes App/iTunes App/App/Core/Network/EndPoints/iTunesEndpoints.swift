@@ -17,11 +17,25 @@ extension iTunesEndpoint: Endpoint {
     var path: String {
         switch self {
         case .podcast:
-            return "?term=podcast"
+            return "/search"
         case .book:
-            return "?term=book"
+            return "/search"
         case .music:
-            return "?term=music"
+            return "/search"
+        }
+    }
+
+    var queryItems: [URLQueryItem] {
+        switch self {
+        case .podcast:
+            let queryItem = URLQueryItem(name: "term", value: "podcast")
+            return [queryItem]
+        case .book:
+            let queryItem = URLQueryItem(name: "term", value: "book")
+            return [queryItem]
+        case .music:
+            let queryItem = URLQueryItem(name: "term", value: "music")
+            return [queryItem]
         }
     }
     

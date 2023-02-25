@@ -11,6 +11,7 @@ protocol Endpoint {
     var scheme: String { get }
     var host: String { get }
     var path: String { get }
+    var queryItems: [URLQueryItem] { get }
     var method: RequestMethod { get } // HTTP Request Methods.
     var header: [String: String]? { get } // A dictionary that'll be filled with credentials if Server side asks for Authorization. Unnecessary for this App.
     var body: [String: String]? { get } // A dictionary that'll be filled with information if methods like POST, PATCH, and PUT is used. Unnecessary for this App because we don't make any data change on server side.
