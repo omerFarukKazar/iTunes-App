@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct Podcast: Codable { // model for results in PodcastResponse file
+struct Podcast: Decodable { // model for results in PodcastResponse file
     let artistName: String?
     let trackName: String?
     let artworkLarge: URL?
@@ -22,5 +22,11 @@ struct Podcast: Codable { // model for results in PodcastResponse file
         case releaseDate
         case country
         case genres
+    }
+
+    var beautifiedReleaseDate: String {
+        guard let releaseDate = releaseDate else { return "-" }
+        guard let index = (releaseDate.range(of: "T")?.lowerBound) else { return "-" }
+        return String(releaseDate.prefix(upTo: index))
     }
 }
